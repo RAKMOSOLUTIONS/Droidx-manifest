@@ -31,6 +31,12 @@
           fetch="https://github.com/LineageOS"
           revision="lineage-20.0" />
 
+  <remote  name="gitlab"
+           fetch="https://gitlab.com/" />
+
+  <remote  name="github"
+           fetch="https://github.com/" />
+
   <superproject name="platform/superproject" remote="aosp" revision="android-13.0.0_r75"/>
   <contactinfo bugurl="go/repo-bug" />
   <!-- BEGIN open-source projects -->

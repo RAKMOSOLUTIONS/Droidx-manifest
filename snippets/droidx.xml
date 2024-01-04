@@ -104,9 +104,10 @@
   <project path="tools/apksig" name="tools_apksig" remote="droidx" />
   
   <!-- Vendor repos -->
-  <project path="vendor/bcr" name="vendor_bcr" remote="droidx"/>
+  <project path="vendor/bcr" name="ram-unlok/bcr" remote="gitlab" revision="main" />
   <project path="vendor/droidx" name="vendor_droidx" remote="droidx"/>
   <project path="vendor/gms" name="vendor_gms" remote="gms" />
+  <project path="packages/apps/ViPER4AndroidFX" name="TogoFire/packages_apps_ViPER4AndroidFX" remote="github" revision="v4a" />
   <project path="vendor/qcom/opensource/fm-commonsys" name="vendor_qcom_opensource_fm-commonsys" remote="droidx" />
   <project path="vendor/support" name="vendor_support" remote="droidx" />
   <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" remote="droidx" />

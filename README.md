@@ -6,13 +6,13 @@ To get started with DroidX-UI, you'll need to get familiar with [Repo](https://s
 To initialize your local repository, use a command like this:
 
 ```bash
-repo init --depth=1 -u https://github.com/DroidX-UI/manifest.git -b 13
+repo init --depth=1 -u https://github.com/RAKMOSOLUTIONS/droidx-manifest.git -b 13 --git-lfs
 ```
 
 Then to sync up:
 
 ```
-repo sync -c -j$(nproc --all) --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune
+repo sync -c -j$(nproc --all) --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune && repo forall -c git lfs pull
 ```
 
 ---------------------------------------------------------------------------------------
@@ -22,9 +22,13 @@ repo sync -c -j$(nproc --all) --force-sync --optimized-fetch --no-tags --no-clon
 From root directory of Project, perform following commands in terminal
 
 ```bash
-$ . build/envsetup.sh
-$ lunch droidx_$device-userdebug
-$ m bacon
+. build/envsetup.sh
+```
+```
+lunch droidx_bitra-userdebug
+```
+```
+m bacon
 ```
 ---------------------------------------------------------------------------------------
 
